@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 0b1ad0a575e4ab5498d2f46b171fa923
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - CC Ultimatum
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 25419ebd5dd4da443b40eb1469dbf281, type: 3}
+  - {fileID: 12800000, guid: 49a2a42cb6443ed498280a368fd9f7db, type: 3}
+  - {fileID: 12800000, guid: e04259665e3bc3a4fa86ddff057774e1, type: 3}
+  - {fileID: 12800000, guid: 5566576fa2981554eb6cbde1a6311e42, type: 3}
+  - {fileID: 12800000, guid: a0cefa452f6d52a489c89ba7c1197c92, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

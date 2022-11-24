@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4923685565013636471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4923685565013636469}
+  - component: {fileID: 4923685565013636468}
+  - component: {fileID: 4923685565013636466}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4923685565013636469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923685565013636471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 592.655, y: 325.3794, z: -70.25812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4923685565013636468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923685565013636471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6178fa5872259f34794c6a2777d407f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 0
+  musicSlider: {fileID: 0}
+  soundFXSlider: {fileID: 0}
+  sounds:
+  - name: DESERT EAGLE
+    clip: {fileID: 8300000, guid: 4f07f942e9b869b4596f0eb6d778f438, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: GLOCK-18
+    clip: {fileID: 8300000, guid: ad470c1ede7e1344ba20eb350798772f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: SAWED-OFF
+    clip: {fileID: 8300000, guid: 61673511dea909348912ab38b6ba0b3d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: XM1014
+    clip: {fileID: 8300000, guid: fc573d0d527977e49bb4a68b40096103, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: AK-47
+    clip: {fileID: 8300000, guid: af443d1bef207a942bc0024656a1f10a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: STEYR AUG A1
+    clip: {fileID: 8300000, guid: d14f38330fd33544689bba6742fdc175, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: FN P90
+    clip: {fileID: 8300000, guid: 55ec80d3b80252e43a36480933e1d421, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: MAC-10
+    clip: {fileID: 8300000, guid: 2c5e3d242de89bb45941f16951e127c2, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: M249
+    clip: {fileID: 8300000, guid: 203f7ff03ef120641bc20d7ef7fb0f06, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: IMI NEGEV
+    clip: {fileID: 8300000, guid: a8b70084830ba7d46bc2b2f620ac21c5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: AWP
+    clip: {fileID: 8300000, guid: 7ceb889361293d04cab023593fb043ab, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: SSG 08
+    clip: {fileID: 8300000, guid: d3e7058f3544caf42aea067cdb8eca68, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: UiClick
+    clip: {fileID: 8300000, guid: 10f480aefc84a5a4eb7d49a76cc4ccff, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: Switch
+    clip: {fileID: 8300000, guid: 68f3d5e8d54521a4fb6a9019d0023669, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: DESERT EAGLER
+    clip: {fileID: 8300000, guid: 92e08d28a0910d2408c936df40ffd198, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: GLOCK-18R
+    clip: {fileID: 8300000, guid: 92e08d28a0910d2408c936df40ffd198, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: SAWED-OFFR
+    clip: {fileID: 8300000, guid: aa5b0d2d9188d1141b84c506a00bf115, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: XM1014R
+    clip: {fileID: 8300000, guid: aa5b0d2d9188d1141b84c506a00bf115, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: AK-47R
+    clip: {fileID: 8300000, guid: a46865581c33ce54598a4e3a04f016f6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: STEYR AUG A1R
+    clip: {fileID: 8300000, guid: a46865581c33ce54598a4e3a04f016f6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: FN P90R
+    clip: {fileID: 8300000, guid: a46865581c33ce54598a4e3a04f016f6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: MAC-10R
+    clip: {fileID: 8300000, guid: a46865581c33ce54598a4e3a04f016f6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: M249R
+    clip: {fileID: 8300000, guid: 72fbb28e82567d84c8cfa4af2d703dcf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: IMI NEGEVR
+    clip: {fileID: 8300000, guid: 72fbb28e82567d84c8cfa4af2d703dcf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: AWPR
+    clip: {fileID: 8300000, guid: 445ee80605d943f4b8a0b7d6e2985654, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: SSG 08
+    clip: {fileID: 8300000, guid: 445ee80605d943f4b8a0b7d6e2985654, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+  - name: EmtyGun
+    clip: {fileID: 8300000, guid: 21b626e75cfa864428271651ba13aa6a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
+--- !u!114 &4923685565013636466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923685565013636471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512617c541429844cb28b594c115d58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  firstShowAOA: 0
+  isInGame: 0
+  m_PlayerData:
+    _qualitySettingsIndex: 2
