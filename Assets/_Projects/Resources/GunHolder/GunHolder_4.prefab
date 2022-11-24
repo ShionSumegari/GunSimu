@@ -233,16 +233,16 @@ MonoBehaviour:
   gunImage: {fileID: 5331193718908882108}
   gunName: FN P90
   bulletImage: {fileID: 21300000, guid: f3df6f198b0386648aa00ee04d52b0cd, type: 3}
-  bulletAmount: 30
+  bulletAmount: 50
   gunLightning: {fileID: 21300000, guid: 930724b4acac1ab4eb339053ee7b5518, type: 3}
   burstMode: 5
   decoidBack: 1
   decoilUp: 1
   backDecoilValue: 30
-  upDecoilValue: -2
+  upDecoilValue: -0.5
   burstDelay: 0.1
-  holdDelay: 0.1
-  timeReload: 2
+  holdDelay: 0.095
+  timeReload: 2.2
 --- !u!1 &2422226790096921298
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,11 +552,11 @@ MonoBehaviour:
   burstMode: 5
   decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 30
-  upDecoilValue: -2
-  burstDelay: 0.1
-  holdDelay: 0.1
-  timeReload: 2
+  backDecoilValue: 15
+  upDecoilValue: -0.5
+  burstDelay: 0.095
+  holdDelay: 0.09
+  timeReload: 2.2
 --- !u!1 &5054307051503978914
 GameObject:
   m_ObjectHideFlags: 0

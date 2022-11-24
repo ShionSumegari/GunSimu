@@ -105,7 +105,7 @@ MonoBehaviour:
     isLoop: 0
     type: 1
   - name: M249
-    clip: {fileID: 8300000, guid: 203f7ff03ef120641bc20d7ef7fb0f06, type: 3}
+    clip: {fileID: 8300000, guid: 5e9d641a1fa6f1c41a59b01a1b5f20af, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
@@ -217,14 +217,14 @@ MonoBehaviour:
     isLoop: 0
     type: 1
   - name: AWPR
-    clip: {fileID: 8300000, guid: 445ee80605d943f4b8a0b7d6e2985654, type: 3}
+    clip: {fileID: 8300000, guid: 32f9e50ab52f43048aeb6e4eb61a3333, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     isLoop: 0
     type: 1
   - name: SSG 08
-    clip: {fileID: 8300000, guid: 445ee80605d943f4b8a0b7d6e2985654, type: 3}
+    clip: {fileID: 8300000, guid: 32f9e50ab52f43048aeb6e4eb61a3333, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}

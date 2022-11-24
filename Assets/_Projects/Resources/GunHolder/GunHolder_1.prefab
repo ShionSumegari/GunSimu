@@ -309,16 +309,16 @@ MonoBehaviour:
   gunImage: {fileID: 2417007909879638896}
   gunName: DESERT EAGLE
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 6
+  bulletAmount: 7
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
-  burstMode: 2
-  decoidBack: 0
+  burstMode: 4
+  decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 0
-  upDecoilValue: -4
-  burstDelay: 0.5
-  holdDelay: 0.4
-  timeReload: 2
+  backDecoilValue: 50
+  upDecoilValue: -15
+  burstDelay: 0.3
+  holdDelay: 0.3
+  timeReload: 2.2
 --- !u!1 &4719216699311657611
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,16 +471,16 @@ MonoBehaviour:
   gunImage: {fileID: 4402302731237060902}
   gunName: GLOCK-18
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 6
+  bulletAmount: 20
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
   burstMode: 3
   decoidBack: 0
   decoilUp: 1
   backDecoilValue: 0
   upDecoilValue: -4
-  burstDelay: 0.5
-  holdDelay: 0.4
-  timeReload: 2
+  burstDelay: 0.09
+  holdDelay: 0.2
+  timeReload: 2.3
 --- !u!1 &6666166852134344276
 GameObject:
   m_ObjectHideFlags: 0

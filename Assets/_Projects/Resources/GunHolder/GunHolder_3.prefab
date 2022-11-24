@@ -233,16 +233,16 @@ MonoBehaviour:
   gunImage: {fileID: 5140207071221362973}
   gunName: AK-47
   bulletImage: {fileID: 21300000, guid: f3df6f198b0386648aa00ee04d52b0cd, type: 3}
-  bulletAmount: 150
+  bulletAmount: 30
   gunLightning: {fileID: 21300000, guid: 930724b4acac1ab4eb339053ee7b5518, type: 3}
   burstMode: 4
   decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 30
-  upDecoilValue: -1
-  burstDelay: 0.15
-  holdDelay: 0.1
-  timeReload: 2
+  backDecoilValue: 40
+  upDecoilValue: -2
+  burstDelay: 0.1
+  holdDelay: 0.11
+  timeReload: 2.4
 --- !u!1 &1970591732261009806
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,16 +547,16 @@ MonoBehaviour:
   gunImage: {fileID: 1680510766688532498}
   gunName: STEYR AUG A1
   bulletImage: {fileID: 21300000, guid: f3df6f198b0386648aa00ee04d52b0cd, type: 3}
-  bulletAmount: 20
+  bulletAmount: 30
   gunLightning: {fileID: 21300000, guid: 930724b4acac1ab4eb339053ee7b5518, type: 3}
   burstMode: 4
   decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 30
+  backDecoilValue: 20
   upDecoilValue: -1
-  burstDelay: 0.15
-  holdDelay: 0.1
-  timeReload: 2
+  burstDelay: 0.105
+  holdDelay: 0.115
+  timeReload: 2.4
 --- !u!1 &5006609176248258039
 GameObject:
   m_ObjectHideFlags: 0

@@ -238,11 +238,11 @@ MonoBehaviour:
   burstMode: 1
   decoidBack: 1
   decoilUp: 0
-  backDecoilValue: 40
+  backDecoilValue: 80
   upDecoilValue: 0
   burstDelay: 2
   holdDelay: 2
-  timeReload: 1
+  timeReload: 1.2
 --- !u!1 &2191712375130192284
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,11 +400,11 @@ MonoBehaviour:
   burstMode: 1
   decoidBack: 1
   decoilUp: 0
-  backDecoilValue: 40
+  backDecoilValue: 50
   upDecoilValue: 0
   burstDelay: 2
   holdDelay: 2
-  timeReload: 1
+  timeReload: 1.2
 --- !u!1 &4042127288782098697
 GameObject:
   m_ObjectHideFlags: 0

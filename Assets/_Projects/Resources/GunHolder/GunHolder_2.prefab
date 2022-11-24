@@ -309,16 +309,16 @@ MonoBehaviour:
   gunImage: {fileID: 2417007909879638896}
   gunName: SAWED-OFF
   bulletImage: {fileID: 21300000, guid: 531add027e71d994f9bd1cffea925c12, type: 3}
-  bulletAmount: 2
+  bulletAmount: 7
   gunLightning: {fileID: 21300000, guid: 33f04c9e12bb2f04497f5bfd58a5e6e5, type: 3}
   burstMode: 2
   decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 50
+  backDecoilValue: 80
   upDecoilValue: -1
-  burstDelay: 1
+  burstDelay: 0.25
   holdDelay: 1
-  timeReload: 2
+  timeReload: 2.2
 --- !u!1 &4719216699311657611
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,16 +471,16 @@ MonoBehaviour:
   gunImage: {fileID: 4402302731237060902}
   gunName: XM1014
   bulletImage: {fileID: 21300000, guid: 531add027e71d994f9bd1cffea925c12, type: 3}
-  bulletAmount: 2
+  bulletAmount: 7
   gunLightning: {fileID: 21300000, guid: 33f04c9e12bb2f04497f5bfd58a5e6e5, type: 3}
   burstMode: 2
   decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 50
+  backDecoilValue: 120
   upDecoilValue: -1
-  burstDelay: 1
+  burstDelay: 0.25
   holdDelay: 1
-  timeReload: 2
+  timeReload: 2.2
 --- !u!1 &6666166852134344276
 GameObject:
   m_ObjectHideFlags: 0
