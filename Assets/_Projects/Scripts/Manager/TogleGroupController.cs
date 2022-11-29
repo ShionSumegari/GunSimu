@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class TogleGroupController : MonoBehaviour
 {
-    [SerializeField] Toggle singleShot;
+    [SerializeField] public Toggle singleShot;
     [SerializeField] Toggle burstMode;
     [SerializeField] Toggle auto;
     [SerializeField] Toggle shake;
 
-    [SerializeField] Sprite checkBox;
+    [SerializeField] public Sprite checkBox;
     [SerializeField] Sprite unCheckBox;
 
     private void Start()
@@ -37,6 +37,7 @@ public class TogleGroupController : MonoBehaviour
         shake.isOn = false;
         GamePlayController.Instance.isShake = false;
         shake.targetGraphic.GetComponent<Image>().sprite = unCheckBox;
+
     }
     public void _OnClickToggleSingleShot()
     {

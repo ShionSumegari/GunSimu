@@ -237,6 +237,13 @@ MonoBehaviour:
     source: {fileID: 0}
     isLoop: 0
     type: 1
+  - name: ClickGun
+    clip: {fileID: 8300000, guid: 185e28ae858987b4293e324ff4b610f7, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    isLoop: 0
+    type: 1
 --- !u!114 &4923685565013636466
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -243,6 +243,15 @@ MonoBehaviour:
   burstDelay: 0.1
   holdDelay: 0.1
   timeReload: 3.5
+  isGoWithGun: 1
+  type: Light machine gun
+  placeOfOrigin: United States
+  inService: "1984\u2013present"
+  designer: Fabrique Nationale de Herstal
+  designed: 1976
+  cartridge: "5.56\xD745mm NATO"
+  name: M249
+  magazineCapacity: 100
 --- !u!1 &2767296134909085153
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +414,15 @@ MonoBehaviour:
   burstDelay: 0.095
   holdDelay: 0.09
   timeReload: 3.5
+  isGoWithGun: 1
+  type: Light machine gun
+  placeOfOrigin: Israel
+  inService: "1997\u2013present"
+  designer: Israel Military Industries
+  designed: "1985\u20131990"
+  cartridge: "5.56\xD745mm NATO"
+  name: 'IMI Negev '
+  magazineCapacity: 150
 --- !u!1 &2829099767571839781
 GameObject:
   m_ObjectHideFlags: 0

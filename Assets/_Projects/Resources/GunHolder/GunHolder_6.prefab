@@ -243,6 +243,15 @@ MonoBehaviour:
   burstDelay: 2
   holdDelay: 2
   timeReload: 1.2
+  isGoWithGun: 1
+  type: Sniper rifle
+  placeOfOrigin: United Kingdom
+  inService: "1982 (L96A1), 1988 (AW), 1990\u2013present"
+  designer: Accuracy International
+  designed: 1982 (PM), 1983 (AW)
+  cartridge: "7.62\xD751mm NATO"
+  name: AWP (Arctic Warfare Police)
+  magazineCapacity: 5
 --- !u!1 &2191712375130192284
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +414,15 @@ MonoBehaviour:
   burstDelay: 2
   holdDelay: 2
   timeReload: 1.2
+  isGoWithGun: 1
+  type: Sniper rifle
+  placeOfOrigin: Austria
+  inService: "2008\u2013present"
+  designer: Steyr Mannlicher
+  designed: 2008
+  cartridge: .243 Winchester
+  name: Steyr SSG 08
+  magazineCapacity: 10
 --- !u!1 &4042127288782098697
 GameObject:
   m_ObjectHideFlags: 0

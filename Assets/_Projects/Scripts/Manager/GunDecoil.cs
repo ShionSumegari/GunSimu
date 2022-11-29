@@ -11,6 +11,7 @@ public class GunDecoil : MonoBehaviour
     [SerializeField] RectTransform gunHolder;
     [SerializeField] RectTransform gunImage;
     [SerializeField] Transform lightning;
+    [SerializeField] Transform lightningWithGun;
     [SerializeField] Transform bulletholder;
     [SerializeField] CanvasGroup splashImage;
     [SerializeField] GameObject splashPlugin;
@@ -66,9 +67,12 @@ public class GunDecoil : MonoBehaviour
         });
         if (!GamePlayController.Instance.isVFX)
         {
+
+            lightningWithGun.GetComponent<RectTransform>().DOScale(Vector3.one * 2, 0.05f).SetEase(Ease.Linear);
             lightning.GetComponent<RectTransform>().DOScale(Vector3.one * 2, 0.05f).SetEase(Ease.Linear)
                 .OnComplete(() => {
                     lightning.GetComponent<RectTransform>().DOScale(Vector3.zero, 0.05f).SetEase(Ease.Linear);
+                    lightningWithGun.GetComponent<RectTransform>().DOScale(Vector3.zero, 0.05f).SetEase(Ease.Linear);
                 });
             foreach (Transform bullet in bulletholder)
             {
@@ -93,10 +97,10 @@ public class GunDecoil : MonoBehaviour
         }
         if (decoilUp)
         {
-            gunImage.DOLocalRotate(new Vector3(gunHolder.localEulerAngles.x, gunHolder.localEulerAngles.y, upDecoilValue), 0.05f).SetEase(Ease.Linear)
+            gunImage.DOLocalRotate(new Vector3(gunImage.localEulerAngles.x, gunImage.localEulerAngles.y, upDecoilValue), 0.05f).SetEase(Ease.Linear)
                  .OnComplete(() =>
                  {
-                     gunImage.DOLocalRotate(new Vector3(gunHolder.localEulerAngles.x, gunHolder.localEulerAngles.y, 0f), 0.05f).SetEase(Ease.Linear);
+                     gunImage.DOLocalRotate(new Vector3(gunImage.localEulerAngles.x, gunImage.localEulerAngles.y, 0f), 0.05f).SetEase(Ease.Linear);
                  });
         }
     }
@@ -114,5 +118,17 @@ public class GunDecoil : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isStoping = true;
         smoke.Stop();
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            splashPlugin.GetComponent<FlashlightPlugin>().TurnOff();
+        }
+    }
+    private void OnApplicationQuit()
+    {
+        splashPlugin.GetComponent<FlashlightPlugin>().TurnOff();
     }
 }

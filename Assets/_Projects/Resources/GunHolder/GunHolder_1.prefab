@@ -319,6 +319,15 @@ MonoBehaviour:
   burstDelay: 0.3
   holdDelay: 0.3
   timeReload: 2.2
+  isGoWithGun: 0
+  type: Semi-automatic pistol
+  placeOfOrigin: United States/Israel
+  inService: None
+  designer: Magnum Research and Israel Military Industries
+  designed: "1979\u20131982"
+  cartridge: .50AE
+  name: Desert Eagle
+  magazineCapacity: 7
 --- !u!1 &4719216699311657611
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +490,15 @@ MonoBehaviour:
   burstDelay: 0.09
   holdDelay: 0.2
   timeReload: 2.3
+  isGoWithGun: 0
+  type: Machine pistol
+  placeOfOrigin: Austria
+  inService: "1982\u2013present"
+  designer: Gaston Glock
+  designed: "1979\u20131982"
+  cartridge: "9\xD719mm Parabellum"
+  name: Glock 18
+  magazineCapacity: 20
 --- !u!1 &6666166852134344276
 GameObject:
   m_ObjectHideFlags: 0

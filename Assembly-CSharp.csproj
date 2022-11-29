@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BFF6547B-57AE-E818-89F0-3E07DE03AD98}</ProjectGuid>
+    <ProjectGuid>{EA7B2730-E35D-24F6-D6C9-43659F3C359E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -129,6 +129,7 @@
     <Compile Include="Assets\_Projects\Scripts\Manager\AudioManager.cs" />
     <Compile Include="Assets\External\TeraJet\Scripts\Handler\RateItemHandler.cs" />
     <Compile Include="Assets\External\TeraJet\Plugins\RestClient\Packages\Proyecto26.RestClient\Helpers\Extensions.cs" />
+    <Compile Include="Assets\_Projects\Scripts\Controller\ResizeImageInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AndroidNativeCore\Plugins\Android\AndroidNativeCore.dll" />
@@ -820,31 +821,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{C0595A5D-0459-24BB-3341-70C49965AA8C}</Project>
+      <Project>{B7DDDA62-E324-4111-35C4-FD0A7CE8A864}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Demos.csproj">
-      <Project>{9E310089-1F28-314C-A473-23C51055D702}</Project>
+      <Project>{1696E3E4-9A38-9313-7EC8-CB9925BAE193}</Project>
       <Name>MoreMountains.NiceVibrations.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
-      <Project>{798BE361-01E5-0F68-55EE-65105E7C585B}</Project>
+      <Project>{B6E78C8C-C6AC-AECA-0C79-2430D474C29E}</Project>
       <Name>MoreMountains.NiceVibrations</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.csproj">
-      <Project>{83DB580F-5372-105E-B329-566419680782}</Project>
+      <Project>{A15A0DF3-845C-B2F6-96EA-C3D56EB9959E}</Project>
       <Name>MoreMountains.NiceVibrations.Haptics</Name>
     </ProjectReference>
     <ProjectReference Include="IngameDebugConsole.Editor.csproj">
-      <Project>{2F358AB3-64A8-2C3D-4BD2-E258D02A192D}</Project>
+      <Project>{801A067C-E8B9-6FB8-AD9C-8CB6C45423FE}</Project>
       <Name>IngameDebugConsole.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="IngameDebugConsole.Runtime.csproj">
-      <Project>{CF246696-C0F8-563B-99B2-F0D282C3B3AB}</Project>
+      <Project>{780976A5-FA4E-0429-127B-38F0DA9F046F}</Project>
       <Name>IngameDebugConsole.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
-      <Project>{3B1649C0-3E76-12DD-12A8-DA7B95707A78}</Project>
+      <Project>{7C8DA439-8567-E42D-EF15-DAB1FE794820}</Project>
       <Name>MoreMountains.NiceVibrations.Editor</Name>
     </ProjectReference>
   </ItemGroup>

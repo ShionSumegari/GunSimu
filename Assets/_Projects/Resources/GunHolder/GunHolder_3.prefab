@@ -243,6 +243,15 @@ MonoBehaviour:
   burstDelay: 0.1
   holdDelay: 0.11
   timeReload: 2.4
+  isGoWithGun: 1
+  type: Assault rifle
+  placeOfOrigin: Soviet Union
+  inService: "1949\u20131974 (Soviet Union), 1949\u2013present (other countries)"
+  designer: Mikhail Kalashnikov
+  designed: "1946\u20131948"
+  cartridge: "7.62\xD739mm"
+  name: AK-47
+  magazineCapacity: 30
 --- !u!1 &1970591732261009806
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +566,15 @@ MonoBehaviour:
   burstDelay: 0.105
   holdDelay: 0.115
   timeReload: 2.4
+  isGoWithGun: 1
+  type: Bullpup assault rifle
+  placeOfOrigin: Austria
+  inService: "1978\u2013present"
+  designer: "Horst Wesp, Karl Wagner, Karl M\xF6ser"
+  designed: 1977
+  cartridge: "5.56\xD745mm NATO"
+  name: Steyr AUG A1
+  magazineCapacity: 30
 --- !u!1 &5006609176248258039
 GameObject:
   m_ObjectHideFlags: 0

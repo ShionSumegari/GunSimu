@@ -319,6 +319,15 @@ MonoBehaviour:
   burstDelay: 0.25
   holdDelay: 1
   timeReload: 2.2
+  isGoWithGun: 1
+  type: Shotgun
+  placeOfOrigin: United States
+  inService: "1930s\u2013present"
+  designer: Coalition of Ordered Governments
+  designed: 1930s
+  cartridge: 12-gauge
+  name: Sawed-Off
+  magazineCapacity: 7
 --- !u!1 &4719216699311657611
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +490,15 @@ MonoBehaviour:
   burstDelay: 0.25
   holdDelay: 1
   timeReload: 2.2
+  isGoWithGun: 1
+  type: Semi-automatic combat shotgun
+  placeOfOrigin: Italy
+  inService: "1999\u2013present"
+  designer: Benelli Armi SPA
+  designed: 1998
+  cartridge: 12-gauge
+  name: XM1014
+  magazineCapacity: 7
 --- !u!1 &6666166852134344276
 GameObject:
   m_ObjectHideFlags: 0

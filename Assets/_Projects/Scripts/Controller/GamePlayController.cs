@@ -19,6 +19,7 @@ public class GamePlayController : MonoBehaviour
     [SerializeField] public bool isVibrate;
     [SerializeField] public bool isVFX;
     [SerializeField] public bool isZoom;
+    [SerializeField] GameObject smoke;
     public bool isRotate;
     [SerializeField] RectTransform rotateButton;
 
@@ -104,7 +105,7 @@ public class GamePlayController : MonoBehaviour
             {
                 startPos = Input.GetTouch(0).position;
             }
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && isOutOfBullet)
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && isOutOfBullet && bulletHolder.childCount == 0)
             {
                 endPos = Input.GetTouch(0).position;
                 if (Vector3.Distance(startPos, endPos) >= 150)
@@ -203,11 +204,20 @@ public class GamePlayController : MonoBehaviour
 
     public void ShakeGun()
     {
-        if (coroutine != null)
+        if (timeDelayCounter < delayHold)
         {
-            StopCoroutine(coroutine);
+            timeDelayCounter += Time.deltaTime;
         }
-        coroutine = StartCoroutine(WaitBurst());
+        else
+        {
+            if (!isOutOfBullet)
+            {
+                justHold = true;
+                gunHolder.GetComponent<GunDecoil>().DeCoilGun();
+            }
+            BulletSetUp();
+            timeDelayCounter = 0;
+        }
     }
 
     IEnumerator WaitBurst()
@@ -270,20 +280,21 @@ public class GamePlayController : MonoBehaviour
         reloadTimer = GameplayUIController.Instance.reloadTime;
         if (!isReloaded)
         {
-            reloadTime.SetActive(true);
-            gunImage.color = new Color32(75, 75, 75, 255);
             isReloaded = true;
             timeReload = true;
             swipe.SetActive(false);
             reload.SetActive(false);
             if (!isUntimateBullet)
             {
+                reloadTime.SetActive(true);
+                gunImage.color = new Color32(75, 75, 75, 255);
                 GameManager.Instance.audioManager.PlaySFX(gunHolder.GetComponent<GunDecoil>().gunName.text + "R", 1f);
                 fillTime.DOFillAmount(0, GameplayUIController.Instance.reloadTime).SetEase(Ease.Linear).OnUpdate(()=> {
                     reloadTimer -= Time.deltaTime;
                     textTime.text = Math.Round(reloadTimer, 1).ToString();
                 }).OnComplete(()=> {
                     reloadTime.SetActive(false);
+                    gunImage.color = new Color32(255, 255, 255, 255);
                     fillTime.fillAmount = 1;
                 });
                 yield return new WaitForSeconds(GameplayUIController.Instance.reloadTime);
@@ -301,7 +312,6 @@ public class GamePlayController : MonoBehaviour
             GameplayUIController.Instance.bulletText.text = "x " + bulletamount;
             isOutOfBullet = false;
             timeReload = false;
-            gunImage.color = new Color32(255, 255, 255, 255);
             if (bulletamount > 50)
             {
                 GameplayUIController.Instance.bulletHolder.gameObject.SetActive(false);
@@ -318,10 +328,12 @@ public class GamePlayController : MonoBehaviour
         if (!isRotate)
         {
             gunHolder.GetComponent<RectTransform>().localEulerAngles = new Vector3(0, -180, 0);
+            smoke.transform.localPosition = new Vector3(20, 0, 400);
         }
         if (isRotate)
         {
             gunHolder.GetComponent<RectTransform>().localEulerAngles = new Vector3(0, 0, 0);
+            smoke.transform.localPosition = new Vector3(20, 0, -400);
         }
         isRotate = !isRotate;
     }

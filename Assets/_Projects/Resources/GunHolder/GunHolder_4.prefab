@@ -243,6 +243,15 @@ MonoBehaviour:
   burstDelay: 0.1
   holdDelay: 0.095
   timeReload: 2.2
+  isGoWithGun: 1
+  type: Submachine gun
+  placeOfOrigin: Belgium
+  inService: "1990\u2013present"
+  designer: FN Herstal
+  designed: "1986\u201390"
+  cartridge: "FN 5.7\xD728mm"
+  name: 'FN P90 '
+  magazineCapacity: 50
 --- !u!1 &2422226790096921298
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +566,15 @@ MonoBehaviour:
   burstDelay: 0.095
   holdDelay: 0.09
   timeReload: 2.2
+  isGoWithGun: 1
+  type: Machine pistol
+  placeOfOrigin: United States
+  inService: "1970\u2013present"
+  designer: Gordon B. Ingram
+  designed: 1964
+  cartridge: ".45 ACP (11.43\xD723mm)"
+  name: MAC-10
+  magazineCapacity: 30
 --- !u!1 &5054307051503978914
 GameObject:
   m_ObjectHideFlags: 0
