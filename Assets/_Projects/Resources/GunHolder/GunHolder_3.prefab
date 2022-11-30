@@ -151,7 +151,7 @@ MonoBehaviour:
   typeGun: 2
   gunId: 8
   locked: 0
-  gunImage: {fileID: 5452305443523015626}
+  gunImage: {fileID: 5938239814165705193}
   gunName: M4A1-S ELDERFLAME
   bulletImage: {fileID: 21300000, guid: f3df6f198b0386648aa00ee04d52b0cd, type: 3}
   bulletAmount: 30
@@ -544,7 +544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50, y: 0}
   m_SizeDelta: {x: 666.9227, y: 278.8348}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &853120061427731856
@@ -745,7 +745,7 @@ MonoBehaviour:
   decoidBack: 1
   decoilUp: 1
   backDecoilValue: 20
-  upDecoilValue: -1
+  upDecoilValue: -3
   burstDelay: 0.105
   holdDelay: 0.115
   timeReload: 2.4
@@ -1111,7 +1111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 40, y: 0}
   m_SizeDelta: {x: 724.0796, y: 209.4152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8685779014599607863
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   typeGun: 2
   gunId: 6
   locked: 0
-  gunImage: {fileID: 3920452036709910302}
+  gunImage: {fileID: 2672478076751702621}
   gunName: FAMAS DAWNBREAKER
   bulletImage: {fileID: 21300000, guid: f3df6f198b0386648aa00ee04d52b0cd, type: 3}
   bulletAmount: 25
@@ -2435,7 +2435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 40, y: 0}
   m_SizeDelta: {x: 724.0796, y: 209.4152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4880736506119319578
@@ -2581,8 +2581,8 @@ RectTransform:
   m_Father: {fileID: 694131661449487879}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.69824487}
-  m_AnchorMax: {x: 0, y: 0.69824487}
+  m_AnchorMin: {x: 0, y: 0.6784567}
+  m_AnchorMax: {x: 0, y: 0.6784567}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2726,8 +2726,8 @@ RectTransform:
   m_Father: {fileID: 2999919996535286779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.69824487}
-  m_AnchorMax: {x: 0, y: 0.69824487}
+  m_AnchorMin: {x: 0, y: 0.6784567}
+  m_AnchorMax: {x: 0, y: 0.6784567}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2918,7 +2918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50, y: 0}
   m_SizeDelta: {x: 666.9227, y: 278.8348}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1754976462794326194

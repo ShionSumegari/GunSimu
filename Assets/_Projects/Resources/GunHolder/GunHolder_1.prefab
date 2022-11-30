@@ -2795,10 +2795,10 @@ MonoBehaviour:
   burstMode: 3
   decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 50
-  upDecoilValue: -15
-  burstDelay: 0.3
-  holdDelay: 0.3
+  backDecoilValue: 60
+  upDecoilValue: -25
+  burstDelay: 0.6
+  holdDelay: 0.7
   timeReload: 2.3
   isGoWithGun: 0
   type: Revolver
