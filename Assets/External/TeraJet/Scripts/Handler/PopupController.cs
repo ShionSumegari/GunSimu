@@ -9,7 +9,7 @@ namespace TeraJet
 
         public enum PopupType
         {
-            SIMPLE, LACK_OF_RESOURCE, PROGRESS, CONFIRM_PURCHASED, BONUS, REWARD, RATE, UPDATE, CONNECTION_REQUIRED
+            SIMPLE, LACK_OF_RESOURCE, PROGRESS, CONFIRM_PURCHASED, BONUS, REWARD, RATE, UPDATE, CONNECTION_REQUIRED, PRIVACY
         }
         [SerializeField] List<TeraPopup> m_Pops;
         [SerializeField] GameObject m_ButtonClose;

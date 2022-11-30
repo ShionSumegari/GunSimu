@@ -94,6 +94,7 @@ public class GameplayUIController : MonoBehaviour
     #region BUY GUN
     public void UnlockHide()
     {
+        GameManager.Instance.audioManager.PlaySFX("UiClick", 1f);
         unlockHolder.DOAnchorPosY(805f, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
         {
                 unlockPanel.DOFade(0, 0.1f).SetEase(Ease.Linear).OnComplete(() => {
@@ -104,6 +105,7 @@ public class GameplayUIController : MonoBehaviour
 
     public void OnCllickBuyGunButton()
     {
+        GameManager.Instance.audioManager.PlaySFX("UiClick", 1f);
         AdsController.Instance.ShowRewardedAd(BuyGun, null, "Buy Gun");
     }
 
@@ -141,7 +143,12 @@ public class GameplayUIController : MonoBehaviour
         }
         gunB.GetComponent<Gun>().locked = false;
         gunB.transform.GetChild(1).gameObject.SetActive(false);
-        UnlockHide();
+        unlockHolder.DOAnchorPosY(805f, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
+        {
+            unlockPanel.DOFade(0, 0.1f).SetEase(Ease.Linear).OnComplete(() => {
+                unlockPanel.gameObject.SetActive(false);
+            });
+        });
     }
     #endregion
 

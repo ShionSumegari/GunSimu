@@ -13,7 +13,8 @@ public class GunHolder : MonoBehaviour
         ASSAULTRIFLES,
         SMGS,
         MACHINEGUNS,
-        SNIPERRIFLES
+        SNIPERRIFLES,
+        ROCKET
     }
 
     public GunType gunType;

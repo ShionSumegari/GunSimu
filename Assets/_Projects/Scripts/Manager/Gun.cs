@@ -14,7 +14,9 @@ public class Gun : MonoBehaviour
          ASSAULTRIFLES,
          SMGS,
          MACHINEGUNS,
-         SNIPERRIFLES
+         SNIPERRIFLES,
+         ROCKET,
+         BOMB
     }
     public TypeGun typeGun;
 
