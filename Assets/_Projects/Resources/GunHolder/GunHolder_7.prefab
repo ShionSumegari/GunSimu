@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningRect: {fileID: 807914645312071675}
-  typeGun: 5
+  typeGun: 7
   gunId: 1
   locked: 0
   gunImage: {fileID: 4058488565370245841}
@@ -208,7 +208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -390, y: 0}
   m_SizeDelta: {x: 274.7775, y: 274.7775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5123706028902107518
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 970, y: 350}
+  m_CellSize: {x: 1341.4, y: 350}
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 2
   m_ConstraintCount: 2
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3187a455b996b449a58cd49a90dec7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunType: 5
+  gunType: 6
   sliderPos: {x: 0, y: 0}
   gunPos: 0
   isGunHolder: 1
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningRect: {fileID: 3162786919258137047}
-  typeGun: 5
+  typeGun: 6
   gunId: 1
   locked: 0
   gunImage: {fileID: 5719235050472939323}
@@ -616,7 +616,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1099.0513, y: 317.1895}
+  m_SizeDelta: {x: 1131.2034, y: 326.4758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4059722795832510210
 CanvasRenderer:
@@ -726,7 +726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -390, y: 0}
   m_SizeDelta: {x: 273.4489, y: 273.4481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5931602985210374402
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningRect: {fileID: 3313220341429321134}
-  typeGun: 5
+  typeGun: 7
   gunId: 1
   locked: 0
   gunImage: {fileID: 1016885148502998173}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningRect: {fileID: 2646545674913029779}
-  typeGun: 5
+  typeGun: 6
   gunId: 2
   locked: 0
   gunImage: {fileID: 4036307160442744133}
@@ -1329,7 +1329,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1099.0513, y: 317.1895}
+  m_SizeDelta: {x: 1127.1729, y: 325.3126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &426902992298002391
 CanvasRenderer:
