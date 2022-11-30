@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 42c3dfac6b7404276ad50be5a6c0befa
+labels:
+- al_max
+- al_max_export_path-MaxSdk/Mediation/GoogleAdManager/Editor/MaxSdk.Mediation.GoogleAdManager.Editor.asmdef
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

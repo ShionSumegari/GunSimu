@@ -1,0 +1,8 @@
+{
+    "name": "MaxSdk.Mediation.GoogleAdManager.Editor",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

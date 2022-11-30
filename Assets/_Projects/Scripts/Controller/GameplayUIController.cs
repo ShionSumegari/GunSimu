@@ -45,11 +45,25 @@ public class GameplayUIController : MonoBehaviour
     [SerializeField] Text m_Cartri;
     [SerializeField] Text m_NameGun;
     [SerializeField] Text m_Manazine;
+
+    [Header("Unlock Gun:")]
+    public RectTransform unlockHolder;
+    public CanvasGroup unlockPanel;
+    public Text gunBName;
+    public Image gunBImage;
+    public string gunBType;
+    public int gunBId;
+    public GameObject gunB;
+
+
+
     public int burstMode;
     public float reloadTime;
 
 
     public Sprite targetImgBullet;
+
+
     #region SingleTon
     public static GameplayUIController Instance;
 
@@ -63,6 +77,70 @@ public class GameplayUIController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        AdsManager.OnRewardAdsLoaded += OnRewardAdsLoaded;
+        AdsManager.OnRewardAdsNotLoaded += OnRewardAdsNotLoaded;
+    }
+
+    void OnRewardAdsLoaded()
+    {
+       
+    }
+    void OnRewardAdsNotLoaded()
+    {
+        
+    }
+    #endregion
+
+    #region BUY GUN
+    public void UnlockHide()
+    {
+        unlockHolder.DOAnchorPosY(805f, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
+        {
+                unlockPanel.DOFade(0, 0.1f).SetEase(Ease.Linear).OnComplete(() => {
+                unlockPanel.gameObject.SetActive(false);
+            });
+        });
+    }
+
+    public void OnCllickBuyGunButton()
+    {
+        AdsController.Instance.ShowRewardedAd(BuyGun, null, "Buy Gun");
+    }
+
+    void BuyGun()
+    {
+        if(gunBType.CompareTo(Gun.TypeGun.PISTOLS.ToString()) == 0)
+        {
+            int idOut = GameManager.Instance.userData._unlockPistolID.FindIndex((x) => x == gunBId);
+            GameManager.Instance.userData._unlockPistolID.RemoveAt(idOut);
+        }
+        if (gunBType.CompareTo(Gun.TypeGun.SHOTGUNS.ToString()) == 0)
+        {
+            int idOut = GameManager.Instance.userData._unlockShotGunID.FindIndex((x) => x == gunBId);
+            GameManager.Instance.userData._unlockShotGunID.RemoveAt(idOut);
+        }
+        if (gunBType.CompareTo(Gun.TypeGun.ASSAULTRIFLES.ToString()) == 0)
+        {
+            int idOut = GameManager.Instance.userData._unlockGunAssaulID.FindIndex((x) => x == gunBId);
+            GameManager.Instance.userData._unlockGunAssaulID.RemoveAt(idOut);
+        }
+        if (gunBType.CompareTo(Gun.TypeGun.MACHINEGUNS.ToString()) == 0)
+        {
+            int idOut = GameManager.Instance.userData._unlockGunMachineID.FindIndex((x) => x == gunBId);
+            GameManager.Instance.userData._unlockGunMachineID.RemoveAt(idOut);
+        }
+        if (gunBType.CompareTo(Gun.TypeGun.SMGS.ToString()) == 0)
+        {
+            int idOut = GameManager.Instance.userData._unlockGunSmgID.FindIndex((x) => x == gunBId);
+            GameManager.Instance.userData._unlockGunSmgID.RemoveAt(idOut);
+        }
+        if (gunBType.CompareTo(Gun.TypeGun.SNIPERRIFLES.ToString()) == 0)
+        {
+            int idOut = GameManager.Instance.userData._unlockGunSniperID.FindIndex((x) => x == gunBId);
+            GameManager.Instance.userData._unlockGunSniperID.RemoveAt(idOut);
+        }
+        gunB.GetComponent<Gun>().locked = false;
+        gunB.transform.GetChild(1).gameObject.SetActive(false);
     }
     #endregion
 
@@ -228,4 +306,11 @@ public class GameplayUIController : MonoBehaviour
         });
     }
     #endregion
+
+    private void OnDestroy()
+    {
+        AdsManager.OnRewardAdsLoaded -= OnRewardAdsLoaded;
+        AdsManager.OnRewardAdsNotLoaded -= OnRewardAdsNotLoaded;
+    }
+
 }
