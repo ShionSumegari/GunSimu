@@ -13,17 +13,17 @@ public class AdsController : MonoBehaviour
     string interAdUnitId = "41231219b2982189";
     string RewardAdUnitId = "93f8d5377e5817b1";
     string bannerAdUnitId = "1d2e72cf661c6da9";
-    string appOpenAdUnitId = "68fc8876741cf22e";
+    string appOpenAdUnitId = "123";
 #elif UNITY_IOS
     string interAdUnitId = "41231219b2982189";
     string RewardAdUnitId = "93f8d5377e5817b1";
     string bannerAdUnitId = "1d2e72cf661c6da9";
-    string appOpenAdUnitId = "68fc8876741cf22e"; 
+    string appOpenAdUnitId = "123"; 
 #else
     string interAdUnitId = "41231219b2982189";
     string RewardAdUnitId = "93f8d5377e5817b1";
     string bannerAdUnitId = "1d2e72cf661c6da9";
-    string appOpenAdUnitId = "68fc8876741cf22e"; 
+    string appOpenAdUnitId = "123"; 
 #endif
     int retryAttemptInter, retryAttemptReward;
     public bool AdsIsLoaded = false;
@@ -59,6 +59,9 @@ public class AdsController : MonoBehaviour
 
             IsInitialized = true;
 
+#if UNITY_ANDROID
+            MaxSdk.ShowMediationDebugger();
+#endif
 
             // Show Mediation Debugger
             // MaxSdk.ShowMediationDebugger();

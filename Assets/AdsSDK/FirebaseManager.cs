@@ -99,20 +99,20 @@ public class FirebaseManager : Singleton<FirebaseManager>
     }
 
     //Firebase Ad impression
-    //public static void OnAOAPaidEvent(GoogleMobileAds.Api.AdValue adValue)
-    //{
-    //    double revenue = adValue.Value;
-    //    var impressionParameters = new[] {
-    //        new Firebase.Analytics.Parameter("ad_platform", "AdMob"),
-    //        new Firebase.Analytics.Parameter("ad_source", "AdMob"),
-    //        new Firebase.Analytics.Parameter("ad_unit_name", ""),
-    //        new Firebase.Analytics.Parameter("ad_format", "AOA"),
-    //        new Firebase.Analytics.Parameter("value", revenue),
-    //        new Firebase.Analytics.Parameter("country_code",MaxSdk.GetSdkConfiguration().CountryCode),
-    //        new Firebase.Analytics.Parameter("currency", adValue.CurrencyCode), // All AppLovin revenue is sent in USD
-    //     };
-    //    Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression", impressionParameters);
-    //}
+    public static void OnAOAPaidEvent(GoogleMobileAds.Api.AdValue adValue)
+    {
+        double revenue = adValue.Value;
+        var impressionParameters = new[] {
+            new Firebase.Analytics.Parameter("ad_platform", "AdMob"),
+            new Firebase.Analytics.Parameter("ad_source", "AdMob"),
+            new Firebase.Analytics.Parameter("ad_unit_name", ""),
+            new Firebase.Analytics.Parameter("ad_format", "AOA"),
+            new Firebase.Analytics.Parameter("value", revenue),
+            new Firebase.Analytics.Parameter("country_code",MaxSdk.GetSdkConfiguration().CountryCode),
+            new Firebase.Analytics.Parameter("currency", adValue.CurrencyCode), // All AppLovin revenue is sent in USD
+         };
+        Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression", impressionParameters);
+    }
     public static void OnAdRevenuePaidEvent(MaxSdkBase.AdInfo impressionData)
     {
         SendNormalAdsImpression(impressionData);

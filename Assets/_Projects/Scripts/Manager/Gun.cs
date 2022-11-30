@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class Gun : MonoBehaviour
 {
@@ -73,6 +74,11 @@ public class Gun : MonoBehaviour
                 targetButton.GetComponent<Gun>().isGoWithGun);
             GunInformation(targetButton);
         }
+        else
+        {
+            UnlockShow(targetButton.GetComponent<Gun>().gunName, targetButton.GetComponent<Gun>().typeGun.ToString(),
+                targetButton.GetComponent<Gun>().gunId, targetButton.GetComponent<Gun>().gunImage.sprite, targetButton.gameObject);
+        }
     }
 
     public void GunInformation(Button targetButton)
@@ -81,4 +87,19 @@ public class Gun : MonoBehaviour
             targetButton.GetComponent<Gun>().inService, targetButton.GetComponent<Gun>().designer, targetButton.GetComponent<Gun>().designed,
             targetButton.GetComponent<Gun>().cartridge, targetButton.GetComponent<Gun>().name, targetButton.GetComponent<Gun>().magazineCapacity);
     }
+    //y 37.5 -> 805
+    public void UnlockShow(string gunName, string gunType, int gunId, Sprite gunImage,GameObject gun)
+    {
+        GameplayUIController.Instance.gunB = gun;
+        GameplayUIController.Instance.gunBName.text = gunName;
+        GameplayUIController.Instance.gunBType = gunType;
+        GameplayUIController.Instance.gunBId = gunId;
+        GameplayUIController.Instance.gunBImage.sprite = gunImage;
+        GameplayUIController.Instance.unlockPanel.gameObject.SetActive(true);
+        GameplayUIController.Instance.unlockPanel.DOFade(1, 0.1f).SetEase(Ease.Linear).OnComplete(() =>
+        {
+            GameplayUIController.Instance.unlockHolder.DOAnchorPosY(37.5f, 0.5f).SetEase(Ease.OutBack);
+        });
+    }
+
 }
