@@ -74,6 +74,11 @@ public class GunDecoil : MonoBehaviour
                     lightning.GetComponent<RectTransform>().DOScale(Vector3.zero, 0.05f).SetEase(Ease.Linear);
                     lightningWithGun.GetComponent<RectTransform>().DOScale(Vector3.zero, 0.05f).SetEase(Ease.Linear);
                 });
+            float speed = 0.05f;
+            if(GameplayUIController.Instance.typeGunImg.CompareTo(Gun.TypeGun.ROCKET.ToString()) == 0)
+            {
+                speed = 0.5f;
+            }
             foreach (Transform bullet in bulletholder)
             {
                 if (!bullet.gameObject.activeSelf)
@@ -81,7 +86,7 @@ public class GunDecoil : MonoBehaviour
                     bullet.GetComponent<Image>().SetNativeSize();
                     bullet.GetComponent<RectTransform>().anchoredPosition = new Vector2(-100, 0);
                     bullet.gameObject.SetActive(true);
-                    bullet.GetComponent<RectTransform>().DOAnchorPosX(-1000, 0.05f).SetEase(Ease.Linear).OnComplete(() =>
+                    bullet.GetComponent<RectTransform>().DOAnchorPosX(-1000, speed).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         bullet.gameObject.SetActive(false);
                     });

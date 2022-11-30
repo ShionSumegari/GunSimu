@@ -144,6 +144,8 @@
     <Compile Include="Assets\External\TeraJet\Plugins\RestClient\Packages\Proyecto26.RestClient\Helpers\HttpBase.cs" />
     <Compile Include="Assets\External\TeraJet\Scripts\Handler\RateItemHandler.cs" />
     <Compile Include="Assets\External\TeraJet\Plugins\RestClient\Packages\Proyecto26.RestClient\Helpers\Extensions.cs" />
+    <Compile Include="Assets\PrivacyController.cs" />
+    <Compile Include="Assets\LinkToURL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Firebase\Plugins\iOS\Firebase.Messaging.dll" />
