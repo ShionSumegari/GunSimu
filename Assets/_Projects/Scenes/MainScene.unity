@@ -13696,7 +13696,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.0003, y: 0}
-  m_SizeDelta: {x: 3929.9463, y: 0}
+  m_SizeDelta: {x: 30000, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1294474731
 GameObject:
@@ -14021,6 +14021,7 @@ MonoBehaviour:
   zoomUI: {fileID: 2102980982}
   gunImage: {fileID: 987750117}
   isShakeMode: 0
+  isZoomFullScreen: 0
 --- !u!1 &1375036711
 GameObject:
   m_ObjectHideFlags: 0
@@ -15253,8 +15254,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 184538411}
   m_HandleRect: {fileID: 184538410}
   m_Direction: 0
-  m_Value: 0.00000006212314
-  m_Size: 0.4307104
+  m_Value: 0
+  m_Size: 0.090172954
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18682,7 +18683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.011520835, y: 0.9777408}
-  m_AnchoredPosition: {x: 154.59106, y: 4.7680054}
+  m_AnchoredPosition: {x: 154.59099, y: 4.7680054}
   m_SizeDelta: {x: 272.9658, y: -17.9871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050620732

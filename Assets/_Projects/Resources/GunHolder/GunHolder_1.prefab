@@ -223,32 +223,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd54bbfed3287ba408173193b3b3b09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightningRect: {fileID: 6704611043565100487}
+  lightningRect: {fileID: 342409265810593927}
   typeGun: 0
   gunId: 2
   locked: 0
-  gunImage: {fileID: 7524775607941991357}
-  gunName: DESERT_SKIN
+  gunImage: {fileID: 2417007909879638896}
+  gunName: D.EAGLE DEMON
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 20
+  bulletAmount: 7
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
   burstMode: 3
-  decoidBack: 0
+  decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 0
-  upDecoilValue: -4
-  burstDelay: 0.09
-  holdDelay: 0.2
-  timeReload: 2.3
+  backDecoilValue: 50
+  upDecoilValue: -15
+  burstDelay: 0.3
+  holdDelay: 0.3
+  timeReload: 2.2
   isGoWithGun: 0
-  type: Machine pistol
-  placeOfOrigin: Austria
-  inService: "1982\u2013present"
-  designer: Gaston Glock
+  type: Semi-automatic pistol
+  placeOfOrigin: United States/Israel
+  inService: None
+  designer: Magnum Research and Israel Military Industries
   designed: "1979\u20131982"
-  cartridge: "9\xD719mm Parabellum"
-  name: Glock 18
-  magazineCapacity: 20
+  cartridge: .50AE
+  name: Desert Eagle
+  magazineCapacity: 7
 --- !u!1 &123658402601074420
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,32 +548,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd54bbfed3287ba408173193b3b3b09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightningRect: {fileID: 4250406285313022554}
+  lightningRect: {fileID: 7987101057650298787}
   typeGun: 0
   gunId: 8
   locked: 0
-  gunImage: {fileID: 4360192500221622976}
-  gunName: R8 REVOLVER-SKIN
+  gunImage: {fileID: 1328589898108371954}
+  gunName: R8 HUNTER
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 20
+  bulletAmount: 8
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
   burstMode: 3
-  decoidBack: 0
+  decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 0
-  upDecoilValue: -4
-  burstDelay: 0.09
-  holdDelay: 0.2
+  backDecoilValue: 50
+  upDecoilValue: -15
+  burstDelay: 0.3
+  holdDelay: 0.3
   timeReload: 2.3
   isGoWithGun: 0
-  type: Machine pistol
-  placeOfOrigin: Austria
-  inService: "1982\u2013present"
-  designer: Gaston Glock
-  designed: "1979\u20131982"
-  cartridge: "9\xD719mm Parabellum"
-  name: Glock 18
-  magazineCapacity: 20
+  type: Revolver
+  placeOfOrigin: United States
+  inService: 1940s
+  designer: Smith & Wesson
+  designed: 1935
+  cartridge: .357 Magnum
+  name: R8 Revolver
+  magazineCapacity: 8
 --- !u!1 &1095535261223371811
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +817,7 @@ MonoBehaviour:
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
   bulletAmount: 7
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
-  burstMode: 4
+  burstMode: 3
   decoidBack: 1
   decoilUp: 1
   backDecoilValue: 50
@@ -1676,9 +1676,9 @@ MonoBehaviour:
   gunId: 5
   locked: 0
   gunImage: {fileID: 1240421405306862101}
-  gunName: P250
+  gunName: SIG Sauer P250
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 20
+  bulletAmount: 13
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
   burstMode: 3
   decoidBack: 0
@@ -1689,14 +1689,14 @@ MonoBehaviour:
   holdDelay: 0.2
   timeReload: 2.3
   isGoWithGun: 0
-  type: Machine pistol
-  placeOfOrigin: Austria
-  inService: "1982\u2013present"
-  designer: Gaston Glock
-  designed: "1979\u20131982"
-  cartridge: "9\xD719mm Parabellum"
-  name: Glock 18
-  magazineCapacity: 20
+  type: Semi-automatic pistol
+  placeOfOrigin: United States
+  inService: "2007\u2013present"
+  designer: Adrian Thomele
+  designed: 2007
+  cartridge: .22 LR
+  name: SIG Sauer P250
+  magazineCapacity: 13
 --- !u!1 &5683087873955609007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   gunId: 4
   locked: 0
   gunImage: {fileID: 7897579077388177684}
-  gunName: GLOCK-SKIN
+  gunName: GLOCK-18 CHROMA
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
   bulletAmount: 20
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
@@ -2575,14 +2575,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd54bbfed3287ba408173193b3b3b09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightningRect: {fileID: 6679102252661673963}
+  lightningRect: {fileID: 288004932947045133}
   typeGun: 0
   gunId: 6
   locked: 0
-  gunImage: {fileID: 8975377522920084884}
-  gunName: P250-Skin
+  gunImage: {fileID: 1240421405306862101}
+  gunName: P250 INFECTION
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 20
+  bulletAmount: 13
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
   burstMode: 3
   decoidBack: 0
@@ -2593,14 +2593,14 @@ MonoBehaviour:
   holdDelay: 0.2
   timeReload: 2.3
   isGoWithGun: 0
-  type: Machine pistol
-  placeOfOrigin: Austria
-  inService: "1982\u2013present"
-  designer: Gaston Glock
-  designed: "1979\u20131982"
-  cartridge: "9\xD719mm Parabellum"
-  name: Glock 18
-  magazineCapacity: 20
+  type: Semi-automatic pistol
+  placeOfOrigin: United States
+  inService: "2007\u2013present"
+  designer: Adrian Thomele
+  designed: 2007
+  cartridge: .22 LR
+  name: SIG Sauer P250
+  magazineCapacity: 13
 --- !u!1 &8055911754725176607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,25 +2790,25 @@ MonoBehaviour:
   gunImage: {fileID: 1328589898108371954}
   gunName: R8 REVOLVER
   bulletImage: {fileID: 21300000, guid: 2611d18acdc435f4fbfde4656c1bf203, type: 3}
-  bulletAmount: 20
+  bulletAmount: 8
   gunLightning: {fileID: 21300000, guid: bd8e43226003a664f8ee70223db36820, type: 3}
   burstMode: 3
-  decoidBack: 0
+  decoidBack: 1
   decoilUp: 1
-  backDecoilValue: 0
-  upDecoilValue: -4
-  burstDelay: 0.09
-  holdDelay: 0.2
+  backDecoilValue: 50
+  upDecoilValue: -15
+  burstDelay: 0.3
+  holdDelay: 0.3
   timeReload: 2.3
   isGoWithGun: 0
-  type: Machine pistol
-  placeOfOrigin: Austria
-  inService: "1982\u2013present"
-  designer: Gaston Glock
-  designed: "1979\u20131982"
-  cartridge: "9\xD719mm Parabellum"
-  name: Glock 18
-  magazineCapacity: 20
+  type: Revolver
+  placeOfOrigin: United States
+  inService: 1940s
+  designer: Smith & Wesson
+  designed: 1935
+  cartridge: .357 Magnum
+  name: R8 Revolver
+  magazineCapacity: 8
 --- !u!1 &8343356486596101517
 GameObject:
   m_ObjectHideFlags: 0
