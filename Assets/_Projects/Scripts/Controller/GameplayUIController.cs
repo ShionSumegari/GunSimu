@@ -141,6 +141,7 @@ public class GameplayUIController : MonoBehaviour
         }
         gunB.GetComponent<Gun>().locked = false;
         gunB.transform.GetChild(1).gameObject.SetActive(false);
+        UnlockHide();
     }
     #endregion
 
