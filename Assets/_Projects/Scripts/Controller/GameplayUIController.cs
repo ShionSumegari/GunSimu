@@ -163,6 +163,11 @@ public class GameplayUIController : MonoBehaviour
             bulletHolder.gameObject.SetActive(false);
             overBulletHolder.gameObject.SetActive(true);
         }
+        else
+        {
+            bulletHolder.gameObject.SetActive(true);
+            overBulletHolder.gameObject.SetActive(false);
+        }
         if (isGoWithGun)
         {
             LightGowithgun.gameObject.SetActive(true);

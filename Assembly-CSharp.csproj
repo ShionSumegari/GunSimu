@@ -62,6 +62,7 @@
     <Compile Include="Assets\External\TeraJet\Plugins\RestClient\Packages\Proyecto26.RestClient\Helpers\ResponseHelper.cs" />
     <Compile Include="Assets\_Projects\Scripts\Manager\LogUtils.cs" />
     <Compile Include="Assets\AndroidNativeCore\Demo\Scripts\Android.cs" />
+    <Compile Include="Assets\_Projects\Scripts\Controller\ResizeImageInfo.cs" />
     <Compile Include="Assets\_Projects\Scripts\Manager\TouchUIController.cs" />
     <Compile Include="Assets\External\TeraJet\Scripts\Configs\TeraJetServerConfig.cs" />
     <Compile Include="Assets\External\TeraJet\Plugins\RestClient\Packages\RSG.Promise\EnumerableExt.cs" />
@@ -129,15 +130,40 @@
     <Compile Include="Assets\_Projects\Scripts\Manager\AudioManager.cs" />
     <Compile Include="Assets\External\TeraJet\Scripts\Handler\RateItemHandler.cs" />
     <Compile Include="Assets\External\TeraJet\Plugins\RestClient\Packages\Proyecto26.RestClient\Helpers\Extensions.cs" />
-    <Compile Include="Assets\_Projects\Scripts\Controller\ResizeImageInfo.cs" />
+    <Compile Include="Assets\AdsSDK\FirebaseManager.cs" />
+    <Compile Include="Assets\AdsSDK\ActionHelper.cs" />
+    <Compile Include="Assets\AdsSDK\AppOpenAdManagerMax.cs" />
+    <Compile Include="Assets\AdsSDK\AdsManager.cs" />
+    <Compile Include="Assets\AdsSDK\AdsController.cs" />
+    <Compile Include="Assets\AdsSDK\GameUtils.cs" />
+    <Compile Include="Assets\AdsSDK\Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Messaging.dll" />
+    <None Include="Assets\Firebase\Plugins\Firebase.Messaging.dll" />
+    <None Include="Assets\Firebase\Plugins\Firebase.Analytics.dll" />
+    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Analytics.dll" />
+    <None Include="Assets\Firebase\Plugins\Firebase.App.dll" />
+    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppAnalytics.dll" />
+    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppMessaging.dll" />
     <None Include="Assets\AndroidNativeCore\Plugins\Android\AndroidNativeCore.dll" />
     <None Include="Assets\External\TeraJet\Plugins\NiceVibration\ThirdParty\Newtonsoft\NewtonsoftJsonLicense.txt" />
+    <None Include="Assets\Firebase\Plugins\Firebase.TaskExtension.dll" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-messaging-unity\maven-metadata.xml" />
     <None Include="Assets\External\TeraJet\Plugins\NiceVibration\Common\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
+    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppApp-10_1_1.dll" />
+    <None Include="Assets\Firebase\Plugins\Firebase.Crashlytics.dll" />
     <None Include="Assets\External\TeraJet\Plugins\NiceVibration\ThirdParty\Newtonsoft\Newtonsoft.Json.dll" />
+    <None Include="Assets\MaxSdk\Mediation\MediationAdapters.txt" />
     <None Include="Assets\External\TeraJet\Plugins\NiceVibration\readme.txt" />
     <None Include="Assets\External\TeraJet\Plugins\NiceVibration\license.txt" />
+    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Crashlytics.dll" />
+    <None Include="Assets\Firebase\Plugins\Firebase.Platform.dll" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-crashlytics-unity\maven-metadata.xml" />
+    <None Include="Assets\Firebase\Plugins\Google.MiniJson.dll" />
+    <None Include="Assets\Firebase\Plugins\iOS\Firebase.App.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -353,11 +379,32 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Unity\2020.3.34f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\External\TeraJet\Plugins\NiceVibration\ThirdParty\Newtonsoft\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Firebase.Crashlytics">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Crashlytics.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>Assets\AppsFlyer\Tests\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\External\TeraJet\Plugins\NiceVibration\ThirdParty\Newtonsoft\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>Assets\AppsFlyer\Tests\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Messaging">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>Assets\AppsFlyer\Tests\NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="AndroidNativeCore">
       <HintPath>Assets\AndroidNativeCore\Plugins\Android\AndroidNativeCore.dll</HintPath>
@@ -365,8 +412,20 @@
     <Reference Include="DOTweenPro">
       <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>Assets\AppsFlyer\Tests\Castle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="DemiLib">
       <HintPath>Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity\2020.3.34f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -767,11 +826,11 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Notifications.iOS">
       <HintPath>Library\ScriptAssemblies\Unity.Notifications.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
@@ -828,9 +887,17 @@
       <Project>{1696E3E4-9A38-9313-7EC8-CB9925BAE193}</Project>
       <Name>MoreMountains.NiceVibrations.Demos</Name>
     </ProjectReference>
+    <ProjectReference Include="AppsFlyer.csproj">
+      <Project>{5EDA991F-8108-4471-185C-61780A001008}</Project>
+      <Name>AppsFlyer</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
       <Project>{B6E78C8C-C6AC-AECA-0C79-2430D474C29E}</Project>
       <Name>MoreMountains.NiceVibrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppsFlyer.Editor.csproj">
+      <Project>{A4962134-2B6E-2E44-56E5-92150753D6E7}</Project>
+      <Name>AppsFlyer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.csproj">
       <Project>{A15A0DF3-845C-B2F6-96EA-C3D56EB9959E}</Project>
@@ -844,9 +911,21 @@
       <Project>{780976A5-FA4E-0429-127B-38F0DA9F046F}</Project>
       <Name>IngameDebugConsole.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.Editor.csproj">
+      <Project>{84128639-0BC8-A427-1351-6CD3DDBF7FB2}</Project>
+      <Name>MaxSdk.Scripts.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.csproj">
+      <Project>{9144DC36-CA09-5456-A498-7F0E9DB51240}</Project>
+      <Name>MaxSdk.Scripts</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
       <Project>{7C8DA439-8567-E42D-EF15-DAB1FE794820}</Project>
       <Name>MoreMountains.NiceVibrations.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.IntegrationManager.Editor.csproj">
+      <Project>{7578622E-DA57-CE47-9393-F55AA1AD56C9}</Project>
+      <Name>MaxSdk.Scripts.IntegrationManager.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

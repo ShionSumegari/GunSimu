@@ -59,7 +59,24 @@
     <Compile Include="Assets\_Projects\Scripts\Editor\UserDataEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Firebase\Editor\FirebaseAnalytics_version-10.1.1_manifest.txt" />
+    <None Include="Assets\ExternalDependencyManager\Editor\1.2.174\Google.IOSResolver.dll" />
     <None Include="Assets\AndroidNativeCore\Editor\AndroidNativCoreEditor.dll" />
+    <None Include="Assets\Firebase\Editor\FirebaseCrashlytics_version-10.1.1_manifest.txt" />
+    <None Include="Assets\ExternalDependencyManager\Editor\1.2.174\Google.VersionHandlerImpl.dll" />
+    <None Include="Assets\MaxSdk\AppLovin\Editor\Dependencies.xml" />
+    <None Include="Assets\Firebase\Editor\Firebase.Messaging.Editor.dll" />
+    <None Include="Assets\Firebase\Editor\FirebaseMessaging_version-10.1.1_manifest.txt" />
+    <None Include="Assets\Firebase\Editor\Firebase.Crashlytics.Editor.dll" />
+    <None Include="Assets\ExternalDependencyManager\Editor\1.2.174\Google.PackageManagerResolver.dll" />
+    <None Include="Assets\Firebase\Editor\MessagingDependencies.xml" />
+    <None Include="Assets\ExternalDependencyManager\Editor\external-dependency-manager_version-1.2.174_manifest.txt" />
+    <None Include="Assets\ExternalDependencyManager\Editor\1.2.174\Google.JarResolver.dll" />
+    <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
+    <None Include="Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll" />
+    <None Include="Assets\Firebase\Editor\AnalyticsDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\CrashlyticsDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\Firebase.Editor.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -334,6 +351,63 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.16\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Editor">
+      <HintPath>Assets\Firebase\Editor\Firebase.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.174\Google.PackageManagerResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.174\Google.JarResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.174\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.174\Google.IOSResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Messaging.Editor">
+      <HintPath>Assets\Firebase\Editor\Firebase.Messaging.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Messaging">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Crashlytics">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Crashlytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Crashlytics.Editor">
+      <HintPath>Assets\Firebase\Editor\Firebase.Crashlytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>Assets\AppsFlyer\Tests\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>Assets\AppsFlyer\Tests\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>Assets\AppsFlyer\Tests\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>Assets\AppsFlyer\Tests\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -834,6 +908,26 @@
     <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
       <Project>{7C8DA439-8567-E42D-EF15-DAB1FE794820}</Project>
       <Name>MoreMountains.NiceVibrations.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.Editor.csproj">
+      <Project>{84128639-0BC8-A427-1351-6CD3DDBF7FB2}</Project>
+      <Name>MaxSdk.Scripts.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.csproj">
+      <Project>{9144DC36-CA09-5456-A498-7F0E9DB51240}</Project>
+      <Name>MaxSdk.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.IntegrationManager.Editor.csproj">
+      <Project>{7578622E-DA57-CE47-9393-F55AA1AD56C9}</Project>
+      <Name>MaxSdk.Scripts.IntegrationManager.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppsFlyer.csproj">
+      <Project>{5EDA991F-8108-4471-185C-61780A001008}</Project>
+      <Name>AppsFlyer</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppsFlyer.Editor.csproj">
+      <Project>{A4962134-2B6E-2E44-56E5-92150753D6E7}</Project>
+      <Name>AppsFlyer.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

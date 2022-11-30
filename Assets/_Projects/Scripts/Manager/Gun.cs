@@ -19,6 +19,8 @@ public class Gun : MonoBehaviour
 
     public int gunId;
 
+    public bool locked;
+
     public Image gunImage;
 
     public string gunName;
@@ -58,16 +60,19 @@ public class Gun : MonoBehaviour
     public void _OnClickGunButton(Button targetButton)
     {
         GameManager.Instance.audioManager.PlaySFX("ClickGun", 1f);
-        GameplayUIController.Instance.OnOpenGunPannel(targetButton.GetComponent<Gun>().gunImage,
-            targetButton.GetComponent<Gun>().lightningRect, targetButton.GetComponent<Gun>().bulletAmount,
-            targetButton.GetComponent<Gun>().bulletImage, targetButton.GetComponent<Gun>().decoidBack,
-            targetButton.GetComponent<Gun>().decoilUp, targetButton.GetComponent<Gun>().backDecoilValue,
-            targetButton.GetComponent<Gun>().upDecoilValue, targetButton.GetComponent<Gun>().gunLightning,
-            targetButton.GetComponent<Gun>().burstMode, targetButton.GetComponent<Gun>().burstDelay,
-            targetButton.GetComponent<Gun>().holdDelay, targetButton.GetComponent<Gun>().gunName,
-            targetButton.GetComponent<Gun>().typeGun, targetButton.GetComponent<Gun>().timeReload,
-            targetButton.GetComponent<Gun>().isGoWithGun);
-        GunInformation(targetButton);
+        if (!targetButton.GetComponent<Gun>().locked)
+        {
+            GameplayUIController.Instance.OnOpenGunPannel(targetButton.GetComponent<Gun>().gunImage,
+                targetButton.GetComponent<Gun>().lightningRect, targetButton.GetComponent<Gun>().bulletAmount,
+                targetButton.GetComponent<Gun>().bulletImage, targetButton.GetComponent<Gun>().decoidBack,
+                targetButton.GetComponent<Gun>().decoilUp, targetButton.GetComponent<Gun>().backDecoilValue,
+                targetButton.GetComponent<Gun>().upDecoilValue, targetButton.GetComponent<Gun>().gunLightning,
+                targetButton.GetComponent<Gun>().burstMode, targetButton.GetComponent<Gun>().burstDelay,
+                targetButton.GetComponent<Gun>().holdDelay, targetButton.GetComponent<Gun>().gunName,
+                targetButton.GetComponent<Gun>().typeGun, targetButton.GetComponent<Gun>().timeReload,
+                targetButton.GetComponent<Gun>().isGoWithGun);
+            GunInformation(targetButton);
+        }
     }
 
     public void GunInformation(Button targetButton)

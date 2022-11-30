@@ -39,11 +39,6 @@ public class GunDecoil : MonoBehaviour
     }
     public void DeCoilGun()
     {
-        if(coroutine != null)
-        {
-            StopCoroutine(coroutine);
-        }
-        coroutine = StartCoroutine(SmokeTime());
         gunDecoilTime = GamePlayController.Instance.delayShot;
         backDecoilValue = backValue;
         if(GamePlayController.Instance.isRotate)
@@ -68,6 +63,11 @@ public class GunDecoil : MonoBehaviour
         if (!GamePlayController.Instance.isVFX)
         {
 
+            if(coroutine != null)
+            {
+                StopCoroutine(coroutine);
+            }
+            coroutine = StartCoroutine(SmokeTime());
             lightningWithGun.GetComponent<RectTransform>().DOScale(Vector3.one * 2, 0.05f).SetEase(Ease.Linear);
             lightning.GetComponent<RectTransform>().DOScale(Vector3.one * 2, 0.05f).SetEase(Ease.Linear)
                 .OnComplete(() => {

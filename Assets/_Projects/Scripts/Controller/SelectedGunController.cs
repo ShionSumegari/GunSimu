@@ -44,6 +44,87 @@ public class SelectedGunController : MonoBehaviour
             GameObject gHolder = Resources.Load<GameObject>("GunHolder/GunHolder_" + i);
             yield return new WaitUntil(() => gHolder != null);
             GameObject gunHolder = Instantiate(gHolder, transform);
+            foreach(Transform gun in gunHolder.transform)
+            {
+                if (gun.GetComponent<Gun>().typeGun == Gun.TypeGun.PISTOLS)
+                {
+                    if(GameManager.Instance.userData._unlockPistolID.Exists(x => x == gun.GetComponent<Gun>().gunId))
+                    {
+                        gun.GetComponent<Gun>().locked = true;
+                        gun.GetChild(1).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        gun.GetComponent<Gun>().locked = false;
+                        gun.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                }
+                if (gun.GetComponent<Gun>().typeGun == Gun.TypeGun.ASSAULTRIFLES)
+                {
+                    if (GameManager.Instance.userData._unlockGunAssaulID.Exists(x => x == gun.GetComponent<Gun>().gunId))
+                    {
+                        gun.GetComponent<Gun>().locked = true;
+                        gun.transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        gun.GetComponent<Gun>().locked = false;
+                        gun.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                }
+                if (gun.GetComponent<Gun>().typeGun == Gun.TypeGun.SHOTGUNS)
+                {
+                    if (GameManager.Instance.userData._unlockShotGunID.Exists(x => x == gun.GetComponent<Gun>().gunId))
+                    {
+                        gun.GetComponent<Gun>().locked = true;
+                        gun.transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        gun.GetComponent<Gun>().locked = false;
+                        gun.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                }
+                if (gun.GetComponent<Gun>().typeGun == Gun.TypeGun.MACHINEGUNS)
+                {
+                    if (GameManager.Instance.userData._unlockGunMachineID.Exists(x => x == gun.GetComponent<Gun>().gunId))
+                    {
+                        gun.GetComponent<Gun>().locked = true;
+                        gun.transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        gun.GetComponent<Gun>().locked = false;
+                        gun.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                }
+                if (gun.GetComponent<Gun>().typeGun == Gun.TypeGun.SMGS)
+                {
+                    if (GameManager.Instance.userData._unlockGunSmgID.Exists(x => x == gun.GetComponent<Gun>().gunId))
+                    {
+                        gun.GetComponent<Gun>().locked = true;
+                        gun.transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        gun.GetComponent<Gun>().locked = false;
+                        gun.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                }
+                if (gun.GetComponent<Gun>().typeGun == Gun.TypeGun.SNIPERRIFLES)
+                {
+                    if (GameManager.Instance.userData._unlockGunSniperID.Exists(x => x == gun.GetComponent<Gun>().gunId))
+                    {
+                        gun.GetComponent<Gun>().locked = true;
+                        gun.transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        gun.GetComponent<Gun>().locked = false;
+                        gun.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                }
+            }
             gunHolder.name = gunHolder.GetComponent<GunHolder>().gunType.ToString();
             gunHolder.GetComponent<RectTransform>().anchoredPosition = new Vector2(m_startGunPos, 0f);
             gunHolder.GetComponent<GunHolder>().gunPos = m_startGunPos - 1920 / 2;

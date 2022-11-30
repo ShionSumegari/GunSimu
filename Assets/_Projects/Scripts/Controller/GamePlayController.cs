@@ -68,6 +68,7 @@ public class GamePlayController : MonoBehaviour
     bool justHold;
     float reloadTimer;
     public bool isShakeMode;
+    public bool isZoomFullScreen;
     #region SingleTon
     public static GamePlayController Instance;
 
@@ -288,6 +289,7 @@ public class GamePlayController : MonoBehaviour
             {
                 reloadTime.SetActive(true);
                 gunImage.color = new Color32(75, 75, 75, 255);
+                GameManager.Instance.audioManager.StopSFX("EmtyGun", 1f);
                 GameManager.Instance.audioManager.PlaySFX(gunHolder.GetComponent<GunDecoil>().gunName.text + "R", 1f);
                 fillTime.DOFillAmount(0, GameplayUIController.Instance.reloadTime).SetEase(Ease.Linear).OnUpdate(()=> {
                     reloadTimer -= Time.deltaTime;
@@ -309,13 +311,18 @@ public class GamePlayController : MonoBehaviour
                 GameObject bullet = Instantiate(bulletPrefab, bulletHolderGun);
                 bullet.GetComponent<Image>().sprite = GameplayUIController.Instance.targetImgBullet;
             }
-            GameplayUIController.Instance.bulletText.text = "x " + bulletamount;
+            GameplayUIController.Instance.bulletText.text = "X " + bulletamount;
             isOutOfBullet = false;
             timeReload = false;
             if (bulletamount > 50)
             {
                 GameplayUIController.Instance.bulletHolder.gameObject.SetActive(false);
                 GameplayUIController.Instance.overBulletHolder.gameObject.SetActive(true);
+            }
+            else
+            {
+                GameplayUIController.Instance.bulletHolder.gameObject.SetActive(true);
+                GameplayUIController.Instance.overBulletHolder.gameObject.SetActive(false);
             }
         }
     }
@@ -394,6 +401,7 @@ public class GamePlayController : MonoBehaviour
 
     public void _OnClickZoomButton()
     {
+        isZoomFullScreen = true;
         GameManager.Instance.audioManager.PlaySFX("UiClick", 1f);
         if (!isZoom)
         {

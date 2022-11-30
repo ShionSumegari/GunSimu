@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ResizeImage : MonoBehaviour
 {
     [SerializeField] Image resizeImage;
     [SerializeField] GridLayoutGroup holder;
     [SerializeField] Slider zoomSlider;
+    [SerializeField] RectTransform zoomPannel;
+    [SerializeField] RectTransform unZoomPannel;
     float height_Scale;
     float height_Scale_Zoom;
 
@@ -25,26 +28,29 @@ public class ResizeImage : MonoBehaviour
         float height = resizeImage.sprite.rect.height;
 
         height_Scale_Zoom = Mathf.Lerp(holder.GetComponent<RectTransform>().rect.height - 100,
-            holder.GetComponent<RectTransform>().rect.height, zoomSlider.value);
+        holder.GetComponent<RectTransform>().rect.height, zoomSlider.value);
         if (!GamePlayController.Instance.isZoom)
         {
-            if (height_Scale > height_Scale_Zoom)
+            transform.GetComponent<RectTransform>().DOAnchorPos(unZoomPannel.anchoredPosition, 0.2f).SetEase(Ease.Linear);
+            if (height_Scale > height_Scale_Zoom && GamePlayController.Instance.isZoomFullScreen)
             {
-                height_Scale -= 7;
+                height_Scale -= 5;
             }
             else
             {
+                GamePlayController.Instance.isZoomFullScreen = false;
                 holder.childAlignment = TextAnchor.MiddleCenter;
                 height_Scale = Mathf.Lerp(holder.GetComponent<RectTransform>().rect.height - 100,
-            holder.GetComponent<RectTransform>().rect.height, zoomSlider.value);
+                holder.GetComponent<RectTransform>().rect.height, zoomSlider.value);
             }
         }
         else if(GamePlayController.Instance.isZoom)
         {
-            holder.childAlignment = TextAnchor.UpperCenter;
+            holder.childAlignment = TextAnchor.MiddleCenter;
+            transform.GetComponent<RectTransform>().DOAnchorPos(zoomPannel.anchoredPosition, 0.2f).SetEase(Ease.Linear);
             if (height_Scale < 600)
             {
-                height_Scale += 7;
+                height_Scale += 5;
             }
             else
             {

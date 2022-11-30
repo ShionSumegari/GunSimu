@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">1034539005862</string>
+  <string name="google_storage_bucket" translatable="false">gunsimulator-a8358.appspot.com</string>
+  <string name="project_id" translatable="false">gunsimulator-a8358</string>
+  <string name="google_api_key" translatable="false">AIzaSyDLBZWnv0u8cgJVeX7JigoaBSY4FVIYM-s</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDLBZWnv0u8cgJVeX7JigoaBSY4FVIYM-s</string>
+  <string name="google_app_id" translatable="false">1:1034539005862:android:137a6bcbc741bc59414167</string>
+  <string name="default_web_client_id" translatable="false">1034539005862-tgda0qnt6aj2b6qp498olcqus6s97off.apps.googleusercontent.com</string>
+</resources>
